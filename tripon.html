@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip on</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./tripon.css">
+   
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./images travel/tripon-removebg-preview.png" alt="Logo" class="logo">
+            </a>
+            <!-- Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Book Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hotels">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Bar -->
+                <form class="d-flex ms-3">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="main-section text-center text-white d-flex align-items-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Your Journey Begins Here</h1>
+            <p class="lead">Explore the world with us. Book flights, trains, buses, hotels, and holiday packages with ease.</p>
+            <a href="#booking" class="btn btn-primary btn-lg">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Booking Section (Flight, Train, Bus) -->
+    <section id="booking" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold text-light">Book Your Travel</h2>
+            <div class="row">
+                <!-- Flight Booking -->
+                <div  class="col-md-4 mb-4">
+                    <div class="card border-0 shadow text-center p-4">
+                        <i class="fas fa-plane fa-3x mb-3 text-secondary"></i>
+                        <h3 class="fw-bold">Flights</h3>
+                        <p>Book domestic and international flights at the best prices.</p>
+                        <a href="#" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <!-- Train Booking -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow text-center p-4">
+                        <i class="fas fa-train fa-3x mb-3 text-secondary"></i>
+                        <h3 class="fw-bold">Trains</h3>
+                        <p>Find and book train tickets for your next journey.</p>
+                        <a href="#" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+                <!-- Bus Booking -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow text-center p-4">
+                        <i class="fas fa-bus fa-3x mb-3 text-secondary"></i>
+                        <h3 class="fw-bold">Buses</h3>
+                        <p>Book bus tickets for a comfortable and affordable ride.</p>
+                        <a href="#" class="btn btn-secondary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotels for Stay Section -->
+    <section id="hotels" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Hotels for Stay</h2>
+            <!-- Hotel Search Form -->
+            <div class="row mb-5">
+                <div class="col-md-8 mx-auto">
+                    <form class="bg-dark p-4 rounded shadow">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="city" class="form-label">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="Enter city">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="checkin" class="form-label">Check-in</label>
+                                <input type="date" class="form-control" id="checkin">
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label for="checkout" class="form-label">Check-out</label>
+                                <input type="date" class="form-control" id="checkout">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Search Hotels</button>
+                    </form>
+                </div>
+            </div>
+            <!-- Featured Hotels -->
+            <div class="row">
+                <!-- Hotel 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/370564672.jpg?k=4f37af06c05a6f5dfc7db5e8e71d2eb66cae6eec36af7a4a4cd7a25d65ceb941&o=&hp=1" class="card-img-top" alt="Hotel 1">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Luxury Resort</h5>
+                            <p class="card-text text-light">Enjoy a luxurious stay with world-class amenities.</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://www.beachvillas.com/pics/main_Images/4330/annabel-beach-palace_118939_1332327534.jpg" class="card-img-top" alt="Hotel 2">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Beachside Villa</h5>
+                            <p class="card-text text-light">Wake up to the sound of waves at this beachfront property.</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hotel 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://content.jdmagicbox.com/comp/def_content_category/mountain-resorts/1-mountain-resorts-1-3ek5p.jpg " class="card-img-top" alt="Hotel 3">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Mountain Retreat</h5>
+                            <p class="card-text text-light">Escape to the mountains for a peaceful getaway.</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Holiday Packages</h2>
+            <div class="row">
+                <!-- Package 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://gamaholidays.com/wp-content/uploads/2023/10/view-from-the-sea-870x555.jpg" class="card-img-top" alt="Beach Getaway">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Beach Getaway</h5>
+                            <p class="card-text text-light">Relax on pristine beaches with our exclusive packages.</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://mountainsojourns.com/wp-content/uploads/Snow-Trek-In-Manali_06.jpg" class="card-img-top" alt="Mountain Adventure">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Manali</h5>
+                            <p class="card-text text-light">Explore the snow trek in Manali</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Package 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <img src="https://logout.world/media/event/3052/Theyyam_at_Andaloor_kavu_2.jpg" class="card-img-top" alt="Cultural Tour">
+                        <div class="card-body bg-dark">
+                            <h5 class="card-title fw-bold text-light">Cultural Tour</h5>
+                            <p class="card-text text-light">Discover rich cultures and heritage sites.</p>
+                            <a href="#" class="btn btn-primary w-100">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews Section -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Customer Reviews</h2>
+            <div class="row">
+                <!-- Review 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sasi</h5>
+                            <p class="card-text">"The flight booking process was seamless, and the hotel stay was amazing. Highly recommended!"</p>
+                            <div class="rating">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mammutty</h5>
+                            <p class="card-text">"The holiday package was well-organized, and we had a fantastic time. Will definitely book again!"</p>
+                            <div class="rating">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9734;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Review 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Mohan lal</h5>
+                            <p class="card-text">"Great service and support throughout the trip. The hotels were top-notch! Thank you so much ❤️"</p>
+                            <div class="rating">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About section -->
+    <div>
+        <h1 class=" text-center">About us</h1>
+        <p class="p-3">
+            At <b>TRIP ON</b>, we believe that every journey is an opportunity to create unforgettable memories. Our mission is to make travel accessible, enjoyable, and hassle-free for everyone. Whether you're planning a relaxing beach getaway, an adventurous mountain trek, or a cultural exploration, we’ve got you covered. With years of experience in the travel industry, we offer a wide range of services, including flight bookings, hotel reservations, holiday packages, and personalized itineraries. Our team of travel experts is dedicated to providing you with the best deals, seamless booking experiences, and 24/7 customer support. At Travel World, we don’t just plan trips—we create experiences that last a lifetime. Let us be your trusted partner in exploring the world.
+        </p>
+        <!-- contact sec -->
+        <div id="contact" class="d-flex justify-content-around bg-dark text-light pt-5">
+            <h3>contact us on </h3>
+            <i class="fa-brands fa-whatsapp fa-2x"></i>
+            <i class="fa-brands fa-instagram fa-2x"></i>
+            <i class="fa-solid fa-phone fa-2x"></i>
+            <i class="fa-brands fa-facebook-f fa-2x"></i>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 TRIP ON. All rights reserved.| Designed by Ridwith</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

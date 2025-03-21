@@ -1,0 +1,121 @@
+/* Custom Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    padding-top: 70px; /* To account for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) ; /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.navbar-brand img.logo {
+    height: 40px; 
+}
+
+.navbar .nav-link {
+    color: white;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107 ; /* Highlight on hover */
+}
+
+.navbar .form-control {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+}
+
+.navbar .form-control::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar .btn-outline-light {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: white;
+}
+
+.navbar .btn-outline-light:hover {
+    background-color: white;
+    color: black;
+}
+
+
+.main-section {
+    
+    height: 100vh;
+    background-image: url(https://cdn.magicdecor.in/com/2024/06/07155849/Travel-Bucket-List-Wallpaper-Mural-for-Wall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:black;
+    text-align: center;
+    
+}
+
+.main-section h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    animation: fadeIn 2s ease-in-out;
+    color: black;
+    
+}
+
+.main-section p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeIn 2.5s ease-in-out;
+    color: black;
+}
+
+.main-section .btn {
+    animation: fadeIn 3s ease-in-out;
+}
+#booking{
+    background-color: rgb(35, 34, 34);
+}
+
+#hotels{
+    background-image: url(https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=70,fit=cover,format=auto,height=933/m/4a9d6c8c5f714e6/original/Xoria-Deluxe-Hotel.jpg);
+}
+#packages{
+    background-image: url(https://www.travelguru.com/holiday-packages/images/goa.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+}
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
